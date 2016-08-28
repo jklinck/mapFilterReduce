@@ -4,7 +4,8 @@ var arr=[
 	{name:'Nick',type:'dog',toys:7},
 	{name:'Champ',type:'dog',toys:4}
 	];
-	
+
+/* I really hate writing console.log() over and over, cl() is much quicker  :)  */	
 function cl(input){
 	console.log(input);
 }
@@ -56,6 +57,7 @@ var catNames2 = arr.reduce(function(felines,e){
 
 //////////////////////////////////////////////////////////
 
+/* This is how you can use reduce to perfrom a mathematcial opeartion, in this case we are showing the total number of toys from all of our pets  */
 var allToys = arr.reduce(function(total,e){
 	return e.toys+total;
 },0);

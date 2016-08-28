@@ -1,0 +1,1 @@
+The index.js file shows various ways to use higher order functions in javascript such as map, filter and reduce. After each example of map or filter I show how to use the reduce function to mimic the same output that we are receiving from map or filter. 

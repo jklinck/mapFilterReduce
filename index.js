@@ -43,7 +43,7 @@ var catNames = arr.filter(function(e){
 	return cats.name;
 });
 
-/* Below we are chaining two separate reduce functions to mimic the filter/map function above*/
+/* Below we are chaining two separate reduce functions to mimic the filter/map function above.
 
 var catNames2 = arr.reduce(function(felines,e){
 	if(e.type=='cat'){
@@ -54,6 +54,16 @@ var catNames2 = arr.reduce(function(felines,e){
 	names.push(e.name);
 	return names;
 },[]);
+
+This can be accomplished with less code in the example below.
+*/
+var catNames3=arr.reduce(function(arr,e){
+	if(e.type=="cat"){
+		arr.push(e.name)''
+	}
+	return arr;
+},[]);
+
 
 //////////////////////////////////////////////////////////
 
@@ -74,8 +84,8 @@ cl(cats2);
 cl('-----------------------');
 cl('Filter chained to map:')
 cl(catNames);
-cl('Reduce chained to reduce:')
-cl(catNames2);
+cl('Reduce mimicking map/filter chain:')
+cl(catNames3);
 cl('-----------------------');
 cl('Reduce:');
 cl(allToys);

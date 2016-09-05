@@ -59,7 +59,7 @@ This can be accomplished with less code in the example below.
 */
 var catNames3=arr.reduce(function(arr,e){
 	if(e.type=="cat"){
-		arr.push(e.name)''
+		arr.push(e.name);
 	}
 	return arr;
 },[]);

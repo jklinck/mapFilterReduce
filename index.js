@@ -67,7 +67,8 @@ var catNames3=arr.reduce(function(arr,e){
 
 //////////////////////////////////////////////////////////
 
-/* This is how you can use reduce to perfrom a mathematcial opeartion, in this case we are showing the total number of toys from all of our pets  */
+/* This is how you can use reduce to perfrom a mathematcial operation, in this case we are showing the total number 
+of toys from all of our pets  */
 var allToys = arr.reduce(function(total,e){
 	return e.toys+total;
 },0);
